@@ -1,0 +1,40 @@
+{
+  "name": "island-gyal-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "latest",
+    "@prisma/client": "latest",
+    "@stripe/stripe-js": "^9.8.0",
+    "cloudinary": "^2.10.0",
+    "clsx": "latest",
+    "fabric": "^7.4.0",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "next": "15",
+    "prisma": "latest",
+    "react": "19",
+    "react-dom": "19",
+    "stripe": "^22.2.0",
+    "tailwind-merge": "latest"
+  },
+  "devDependencies": {
+    "@types/fabric": "^5.3.11",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
