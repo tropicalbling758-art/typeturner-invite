@@ -4,7 +4,16 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+}
+
+model CustomDesign {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  designData  Json
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 
 model User {
@@ -15,6 +24,7 @@ model User {
   lastName      String?
   imageUrl      String?
   orders        Order[]
+  customDesigns CustomDesign[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }

@@ -19,6 +19,7 @@
     "framer-motion": "latest",
     "lucide-react": "latest",
     "next": "15",
+    "next-cloudinary": "^6.17.5",
     "prisma": "latest",
     "react": "19",
     "react-dom": "19",
